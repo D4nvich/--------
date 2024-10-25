@@ -1,7 +1,7 @@
 <div class="content-header">
     <div class="container-header-cont">
         <div class="logo">
-            <p style="font-size:26px ; margin: 0; color: white ;">logo</p>
+            <p style="font-size:26px ; margin: 0; color: white ;">piska</p>
             <!-- <img src="" alt="Logo"> -->
         </div>
         <div class="serch">
