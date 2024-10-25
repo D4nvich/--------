@@ -1,0 +1,52 @@
+.container_tovars_con {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+
+.blocks_tov_con {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px;
+}
+
+.block_tov {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.block_tov a {
+    color: black;
+    text-decoration: none;
+}
+
+.block_tov img {
+    border: 3px solid #FF9243;
+    @media (min-width: 0px) {
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+    }
+    @media (min-width: 1020px) {
+        width: 300px;
+        height: 300px;
+        border-radius: 50px;
+    }
+}
+
+.block_tov p {
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    @media (min-width: 200px) {
+        font-size: 14px;
+        max-width: 100px;
+    }
+    @media (min-width: 1020px) {
+        font-size: 26px;
+        max-width: 300px;
+    }
+}
+

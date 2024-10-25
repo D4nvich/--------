@@ -1,0 +1,18 @@
+.footer-content{
+    background-color:#393939 ;
+    padding: 10px 20px;
+}
+.footer-container-cont{
+    max-width: 1550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.block-info-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}

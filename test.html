@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/pages/buy-rent.css">
+    <link rel="stylesheet" href="../css/atribut/header.css">
+    <link rel="stylesheet" href="../css/atribut/footer.css">
+    <link rel="stylesheet" href="../css/atribut/popular_tovar.css">
+    <link rel="stylesheet" href="../css/atribut/tovars_content.css">
+</head>
+<body>
+    <div class="zagolovok_content">
+        <h1>-КИНООБРУДОВАНИЕ-</h1>
+    </div>
+
+    <div class="main-under-header">
+        <div class="top_content_serch">
+            <div class="menu_search">
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+            </div>
+            <div class="burger-menu-search">
+                <div class="content-burger-menu">
+                    <div class="close-btn-search">+</div>
+                </div>
+            </div>
+        </div>
+        <div class="content_tovars">
+            <div class="container_popular_tovars_con">
+                <div class="zagolovok_pop_tov_con">
+                    <h1>Популярное оборудование:</h1>
+                </div>
+                <div class="slider-container">
+                    <button class="prev">‹</button>
+                    <div class="slider-wrapper">
+                        <div class="blocks_pop_tov_con">
+                        </div>
+                    </div>
+                    <button class="next">›</button>
+                </div>
+            </div>
+            
+            <script>
+                const sliderWrapper = document.querySelector('.blocks_pop_tov_con');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+            let currentSlide = 0;
+            const cardsToShow = 4;
+            const cardWidth = 300 + 75; // Ширина карточки + gap между ними
+            
+            nextButton.addEventListener('click', () => {
+                const totalSlides = document.querySelectorAll('.block_pop_tov').length;
+                const maxSlide = totalSlides - cardsToShow; // Сколько карточек можно пролистать
+            
+                if (currentSlide < maxSlide) {
+                    currentSlide++;
+                    sliderWrapper.style.transform = `translateX(-${currentSlide * cardWidth}px)`; 
+                }
+            });
+            
+            prevButton.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    sliderWrapper.style.transform = `translateX(-${currentSlide * cardWidth}px)`; 
+                }
+            });
+            
+            
+            </script>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector('.menu_search')?.addEventListener('click', () => {
+    const burgerMenu = document.querySelector('.burger-menu-search');
+    burgerMenu?.classList.add('open');
+    const SmeshList = document.querySelector('.content_tovars');
+    SmeshList?.classList.add('visib');
+});
+
+    document.querySelector('.close-btn-search')?.addEventListener('click', () => {
+    const burgerMenu = document.querySelector('.burger-menu-search');
+    burgerMenu?.classList.remove('open');
+    const SmeshList = document.querySelector('.content_tovars');
+    SmeshList?.classList.remove('visib');
+});
+
+</script>
+</html>
+</body>
+</html>

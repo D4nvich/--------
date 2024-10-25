@@ -1,0 +1,87 @@
+body{
+    margin:  0 auto;
+}
+.main{
+    background: url(../img/backgr.jpg), no-repeat ;
+    background-size: cover;  
+    opacity: 100%;
+    background-position: center;
+    background-color: rgba(47, 47, 47, 0.6);
+    background-blend-mode: overlay;
+    height: 90vh;
+}
+.main_acc_form{
+    padding-top: 20px;
+    max-width: 1550px;
+    margin: 0 auto;
+    display: flex;
+    @media (min-width: 200px) {
+        justify-content: center;
+    }
+    @media (min-width: 1500px) {
+        justify-content:right;
+    }
+}
+.container_for_main_form{
+    background-color: #FF9243;
+    border: 5px solid white;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 45px;
+    align-items: center;
+    @media (min-width: 200px) {
+        border-radius : 15px;
+        max-width: 550px;
+    }
+    @media (min-width: 1500px) {
+        border-radius : 25px;
+    }
+}
+.form_for_get_acc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.form_for_get_acc input{
+    width: 100%;
+    height: 75px;
+    border-color: black;
+    font-size: 36px;
+    border-radius : 25px;
+}
+
+.change_ent_reg_und_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+.change_ent_reg_und_form h1{
+    color: white;
+    list-style-type: none;
+    margin: 0;
+}
+.change_ent_reg_und_form .active{
+    color: black;
+}
+.change_ent_reg_und_form a{
+    text-decoration: none;
+}
+.change_ent_reg_und_form hr{
+    width: 100%;
+    margin: 0;
+    border-color: black;
+}
+.bt_pr_1_form{
+    border: 2px solid transparent;
+    color: #FF9243;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: white;
+}

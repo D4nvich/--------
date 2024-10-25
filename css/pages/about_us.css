@@ -1,0 +1,57 @@
+body{
+    margin: 0 auto;
+}
+.main_container_ab_us{
+    background: url(../img/backgr_ab_us.jpg), no-repeat;
+    background-size: cover;  
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    background-blend-mode: overlay;
+    height: 90vh;
+}
+.content_ab_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+.glav_info_ab_us{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.glav_info_ab_us img{
+    width: 950px;
+    height: 550px;
+    border-radius: 25px;
+    border: 3px solid black;
+}
+.link_ab_us{
+    display: flex;
+    gap: 20px;
+}
+.txt_ab_us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.txt_ab_us h1{
+    color: white;
+    font-size: 40px;
+}
+.bt_pr_map{
+    padding: 15px;
+    background-color: #FF9243;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+}
+.link_ab_us a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
